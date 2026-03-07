@@ -155,52 +155,104 @@
 
 
 
-.logo-slider {
-	overflow: hidden;
-	position: relative;
-	width: 100%;
-	margin-top: 40px;
+.logo-slider{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
 }
 
-.logo-track {
-	display: flex;
-	width: calc(220px * 12);
-	animation: scroll 25s linear infinite;
+.logo-track{
+  display: flex;
+  width: calc(220px * 12);
+  animation: scroll 25s linear infinite;
 }
 
-.partner-item {
-	padding: 20px 45px;
-	flex: 0 0 auto;
-	opacity: .4;
-	transition: .4s;
+/* .partner-item{
+  padding: 10px 20px;
+  flex: 0 0 auto;
+  opacity: .4;
+  transition: .4s;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+} */
+
+/* .partner-item:hover{
+  opacity:1;
 }
 
-.partner-item:hover {
-	opacity: 1;
+.partner-item img{
+  max-width:220px;
+  display:block;
+} */
+
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-50%);
+  }
 }
 
-.partner-item img {
-	max-width: 220px;
-	display: block;
+@media(max-width:700px){
+.partner-item img{
+max-width:150px;
+}
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  width: calc(220px * 12); /* total logos */
+  animation: scroll 25s linear infinite;
+}
+
+.group {
+  display: flex;
+}
+
+.partner-item{
+  width:400px;              /* same width for all */
+  height:100px;             /* same height */
+  padding:20px 30px;
+  opacity:.5;
+  transition:.3s;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.partner-item:hover{
+  opacity:1;
+  transform:scale(1.05);
+}
+
+.partner-item img{
+  width:200px;              /* same logo size */
+  height:80px;
+  object-fit:contain;      /* keeps logo ratio*/
+  display:block;
 }
 
 @keyframes scroll {
-	0% {
-		transform: translateX(0);
-	}
-
-	100% {
-		transform: translateX(-50%);
-	}
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
-@media(max-width:700px) {
-	.partner-item img {
-		max-width: 150px;
-	}
+@media (max-width:700px){
+  .partner-item img{
+    max-width:150px;
+  }
 }
-
-.logo-track:hover{
-animation-play-state:paused;
-}
-

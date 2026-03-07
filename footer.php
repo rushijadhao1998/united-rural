@@ -98,6 +98,55 @@
 
 <script src="assets/js/emi.js"></script>
 
+<script>
+document.querySelector('.mobile-nav-toggle').addEventListener('click', function() {
+  document.querySelector('#navmenu ul').classList.toggle('mobile-active');
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 50
+    },
+    "color": {
+      "value": "#93296f"
+    },
+    "shape": {
+      "type": "circle"
+    },
+    "opacity": {
+      "value": 0.3
+    },
+    "size": {
+      "value": 4
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#c94fa1",
+      "opacity": 0.3,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 2
+    }
+  },
+  "interactivity": {
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      }
+    }
+  },
+  "retina_detect": true
+});
+</script>
+
 
 </body>
 

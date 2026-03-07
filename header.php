@@ -31,6 +31,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
   <link href="assets/css/about.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/servicedetails.css">
   <link href="assets/css/contact.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/interest.css">
 
 
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
@@ -46,6 +47,9 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
+
+    <!-- this is use for moving items in header background  -->
+    <div id="particles-js"></div>
 
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
@@ -66,56 +70,22 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
         <ul>
 
-          <li>
-            <a href="index.php" class="<?= ($currentPage == 'index.php') ? 'active' : '' ?>">
-              Home
-            </a>
-          </li>
+          <li><a href="index.php" class="<?= ($currentPage == 'index.php') ? 'active' : '' ?>">Home</a></li>
 
-          <li class="dropdown <?= (strpos($currentPage, 'service') !== false) ? 'active' : '' ?>">
-
-            <a href="#">
-              <span>Services</span>
-              <i class="bi bi-chevron-down toggle-dropdown"></i>
-            </a>
+          <li class="dropdown <?= (strpos($currentPage, 'service') !== false) ? 'active' : '' ?>"><a href="#"><span>Services</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
 
             <ul>
+              <li><a href="service-deposite.php" class="<?= ($currentPage == 'service-deposite.php') ? 'active' : '' ?>">Deposit Scheme</a></li>
 
-              <li>
-                <a href="service-deposite.php" class="<?= ($currentPage == 'service-deposite.php') ? 'active' : '' ?>">
-                  Deposit Scheme
-                </a>
-              </li>
+              <li><a href="service-loan.php" class="<?= ($currentPage == 'service-loan.php') ? 'active' : '' ?>">Loan Scheme</a></li>
 
-              <li>
-                <a href="service-loan.php" class="<?= ($currentPage == 'service-loan.php') ? 'active' : '' ?>">
-                  Loan Scheme
-                </a>
-              </li>
+              <li><a href="service-pigmy.php" class="<?= ($currentPage == 'service-pigmy.php') ? 'active' : '' ?>">Pigmy Scheme</a></li>
 
-              <li>
-                <a href="service-pigmy.php" class="<?= ($currentPage == 'service-pigmy.php') ? 'active' : '' ?>">
-                  Pigmy Scheme
-                </a>
-              </li>
+              <li><a href="service-sms.php" class="<?= ($currentPage == 'service-sms.php') ? 'active' : '' ?>">SMS Banking</a></li>
 
-              <li>
-                <a href="service-sms.php" class="<?= ($currentPage == 'service-sms.php') ? 'active' : '' ?>">
-                  SMS Banking
-                </a>
-              </li>
+              <li><a href="service-neft.php" class="<?= ($currentPage == 'service-neft.php') ? 'active' : '' ?>">NEFT/RTGS</a></li>
 
-              <li>
-                <a href="service-neft.php" class="<?= ($currentPage == 'service-neft.php') ? 'active' : '' ?>">
-                  NEFT/RTGS
-                </a>
-              </li>
-
-              <li>
-                <a href="service-emi.php" class="<?= ($currentPage == 'service-emi.php') ? 'active' : '' ?>">
-                  EMI Calculator
-                </a>
-              </li>
+              <li><a href="service-emi.php" class="<?= ($currentPage == 'service-emi.php') ? 'active' : '' ?>">EMI Calculator</a></li>
 
             </ul>
 
@@ -177,7 +147,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
           </li>
 
           <li>
-            <a class="login_btn" href="https://banking.elioratechno.in/admin/index">
+            <a class="login_btn" id="login_btn" href="https://banking.elioratechno.in/admin/index">
               LOGIN
             </a>
           </li>
@@ -191,12 +161,3 @@ $currentPage = basename($_SERVER['PHP_SELF']);
     </div>
 
   </header>
-
-  <style>
-    .login_btn {
-      padding: 5px 20px;
-      border: 2px solid #93296f;
-      border-radius: 7px;
-      background: #efecf1;
-    }
-  </style>

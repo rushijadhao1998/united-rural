@@ -1,3 +1,42 @@
+#login_btn{
+  padding: 8px 20px;
+  border-radius: 30px;
+  background: linear-gradient(135deg,#93296f,#c94fa1);
+  color: #fff !important;
+  font-weight: 600;
+  letter-spacing: .5px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all .35s ease;
+  box-shadow: 0 6px 18px rgba(147,41,111,0.35);
+  cursor: pointer;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+/* icon */
+.login_btn::before{
+  content: "\f2f6";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+/* hover effect */
+.login_btn:hover{
+  background: linear-gradient(135deg,#7a1f5a,#93296f);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(147,41,111,0.45);
+}
+
+/* click animation */
+.login_btn:active{
+  transform: scale(.96);
+}
+
 @font-face {
   font-family: 'Bauhaus93';
   src: url(/assets/fonts/Bauhaus93.ttf) format('truetype');
@@ -375,4 +414,172 @@
 .footer .credits a {
   color: #7a50c2;
   font-weight: 500;
+}
+
+
+
+
+/* THIS IS A NEW CODE FOR MAKE MORE ATTRACTIVE   */
+
+/* menu hover animation */
+
+.navmenu ul li a{
+  position: relative;
+  transition: all .3s ease;
+}
+
+.navmenu ul li a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-3px;
+  width:0;
+  height:2px;
+  background:#93296f;
+  transition:0.3s;
+}
+
+.navmenu ul li a:hover::after,
+.navmenu ul li a.active::after{
+  width:100%;
+}
+
+/* dropdown style */
+
+.navmenu .dropdown ul{
+  border-radius:8px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* mobile fix */
+
+@media (max-width:1199px){
+
+.navmenu ul{
+  background:#fff;
+}
+
+.navmenu ul li{
+  padding:10px 15px;
+}
+
+}
+
+.login_btn{
+  position:relative;
+  overflow:hidden;
+}
+
+.login_btn::after{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background:linear-gradient(120deg,transparent,rgba(255,255,255,0.4),transparent);
+  transition:0.6s;
+}
+
+.login_btn:hover::after{
+  left:100%;
+}
+
+
+@media (max-width:768px){
+
+.navmenu ul li{
+  padding:10px 0;
+}
+
+.login_btn{
+  margin-top:10px;
+  justify-content:center;
+}
+
+}
+
+.scrolled .header{
+  box-shadow:0 6px 20px rgba(0,0,0,0.12);
+}
+
+.logo img{
+  transition:0.3s;
+}
+
+.logo img:hover{
+  transform:scale(1.05);
+}
+
+
+.header{
+  /* position: relative; */
+  background: linear-gradient(120deg,#fdfbff,#f3e8ff,#ffeef8);
+  padding: 10px 0;
+  /* overflow: hidden; */
+  transition: all .4s ease;
+}
+
+/* floating gradient circles */
+
+.header::before,
+.header::after{
+  content:"";
+  position:absolute;
+  width:350px;
+  height:350px;
+  border-radius:50%;
+  filter: blur(90px);
+  opacity:0.45;
+  animation: floatMove 12s infinite alternate ease-in-out;
+}
+
+.header::before{
+  background:#d8b4fe;
+  top:-120px;
+  left:-120px;
+}
+
+.header::after{
+  background:#f9a8d4;
+  bottom:-120px;
+  right:-120px;
+  animation-delay:3s;
+}
+
+/* animation */
+
+@keyframes floatMove{
+  0%{
+    transform: translate(0,0);
+  }
+  100%{
+    transform: translate(80px,40px);
+  }
+}
+
+
+
+.navmenu ul li a{
+  color:#4b2a6b;
+  font-weight:500;
+}
+
+.navmenu ul li a:hover{
+  color:#93296f;
+}
+
+
+#particles-js{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index:0;
+}
+
+.header .container-xl{
+  position:relative;
+  z-index:2;
 }

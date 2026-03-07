@@ -1,65 +1,146 @@
 /*--------------------------------------------------------------
 # Interest Section
 --------------------------------------------------------------*/
-.features .feature-box {
-  background-color: var(--surface-color);
-  padding: 24px 20px;
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
-  height: 100%;
+
+.features{
+  padding:70px 0;
+  background:linear-gradient(120deg,#faf7ff,#f5f0ff);
 }
 
-.features .feature-box h3 {
-  font-size: 18px;
-  font-weight: 700;
-  margin: 0;
+/* feature heading box */
+
+.features .feature-box{
+  background:#ffffff;
+  padding:22px 20px;
+  border-radius:10px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+  transition:.35s;
 }
 
-.features .feature-box i {
-  background: color-mix(in srgb, var(--accent-color), transparent 92%);
-  color: var(--accent-color);
-  line-height: 0;
-  padding: 4px;
-  margin-right: 10px;
-  font-size: 24px;
-  border-radius: 3px;
-  transition: 0.3s;
+.features .feature-box:hover{
+  transform:translateY(-5px);
+  box-shadow:0 15px 35px rgba(0,0,0,0.15);
 }
 
-.features .feature-box:hover i {
-  background: var(--accent-color);
-  color: var(--contrast-color);
+.features .feature-box h3{
+  font-size:20px;
+  font-weight:700;
+  margin:0;
+  color:#93296f;
 }
 
-#rate {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
+.features .feature-box i{
+  background:#f2e6f6;
+  color:#93296f;
+  line-height:0;
+  padding:6px;
+  margin-right:12px;
+  font-size:24px;
+  border-radius:6px;
+  transition:.3s;
+}
+
+.features .feature-box:hover i{
+  background:#93296f;
+  color:#fff;
+}
+
+/*--------------------------------------------------------------
+# Tables
+--------------------------------------------------------------*/
+
+.table{
+  background:#fff;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* table header */
+
+.table th{
+  background:#93296f;
+  color:#fff;
+  text-align:center;
+  font-weight:600;
+  font-size:15px;
+}
+
+/* table cells */
+
+.table td{
+  text-align:center;
+  vertical-align:middle;
+  font-size:14px;
+}
+
+/* left align for some cells */
+
+.ln-typ,
+.int_due{
+  text-align:left;
+  padding-left:12px;
+}
+
+/* zebra rows */
+
+.table tbody tr:nth-child(even){
+  background:#faf6fc;
+}
+
+/* hover row */
+
+.table tbody tr:hover{
+  background:#f2e6f6;
+  transition:.2s;
+}
+
+/*--------------------------------------------------------------
+# Table headings
+--------------------------------------------------------------*/
+
+h1{
+  color:#93296f;
+  letter-spacing:.5px;
+}
+
+/*--------------------------------------------------------------
+# Mobile Responsive
+--------------------------------------------------------------*/
+
+@media (max-width:768px){
+
+.table{
+  font-size:13px;
+}
+
+.table th,
+.table td{
+  padding:8px;
+}
 
 }
 
-th{
-  background-color: #93296f;
-  color: #fff;
+@media (max-width:500px){
+
+.table th{
+  font-size:12px;
 }
 
-@media (max-width: 500px) {
-  th{
-    font-size: 14px;
-  }
-
-  td{
-    font-size: 14px;
-  }
+.table td{
+  font-size:12px;
 }
 
-@media (max-width: 400px) {
-  th{
-    font-size: 12px;
-  }
+}
 
-  td{
-    font-size: 12px;
-  }
+@media (max-width:400px){
+
+.table th{
+  font-size:11px;
+}
+
+.table td{
+  font-size:11px;
+}
+
 }
