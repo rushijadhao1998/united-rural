@@ -1,41 +1,41 @@
 <footer id="footer" class="footer light-background">
 
-<div class="container">
+    <div class="container">
 
-<div class="copyright text-center">
+        <div class="copyright text-center">
 
-<p>
-© <span>Copyright</span>
-<strong class="px-1 sitename-footer">United Rural</strong>
-<span>All Rights Reserved</span>
-</p>
+            <p>
+                © <span>Copyright</span>
+                <strong class="px-1 sitename-footer">United Rural</strong>
+                <span>All Rights Reserved</span>
+            </p>
 
-</div>
+        </div>
 
-<div class="social-links d-flex justify-content-center">
+        <div class="social-links d-flex justify-content-center">
 
-<a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
 
-<a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
 
-<a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
 
-<a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
 
-</div>
+        </div>
 
-<div class="credits">
-Designed by
-<a href="https://rushijadhao1998.github.io/new_port/">Hrushikesh Jadhao</a>
-</div>
+        <div class="credits">
+            Designed by
+            <a href="https://rushijadhao1998.github.io/new_port/">Hrushikesh Jadhao</a>
+        </div>
 
-</div>
+    </div>
 
 </footer>
 
 
 <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
-<i class="bi bi-arrow-up-short"></i>
+    <i class="bi bi-arrow-up-short"></i>
 </a>
 
 <div id="preloader"></div>
@@ -63,40 +63,41 @@ Designed by
 
 
 <script>
+    const swiper = new Swiper('.swiper', {
 
-const swiper = new Swiper('.swiper',{
+        effect: "fade",
 
-effect:"fade",
+        fadeEffect: {
+            crossFade: true
+        },
 
-fadeEffect:{
-crossFade:true
-},
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+        },
 
-autoplay:{
-delay:3000,
-disableOnInteraction:false
-},
+        speed: 2000,
+        loop: true,
 
-speed:2000,
-loop:true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
 
-pagination:{
-el:'.swiper-pagination',
-clickable:true
-},
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
 
-navigation:{
-nextEl:'.swiper-button-next',
-prevEl:'.swiper-button-prev'
-},
+        scrollbar: {
+            el: '.swiper-scrollbar'
+        }
 
-scrollbar:{
-el:'.swiper-scrollbar'
-}
-
-});
-
+    });
 </script>
+
+<script src="assets/js/emi.js"></script>
+
 
 </body>
 
