@@ -256,3 +256,91 @@ max-width:150px;
     max-width:150px;
   }
 }
+
+
+.about-hero-banner{
+padding:100px 0;
+background:linear-gradient(135deg,#93296f,#c94fa1);
+color:#fff;
+}
+
+.about-hero-banner h1{
+font-size:42px;
+font-weight:700;
+margin-bottom:15px;
+}
+
+.about-hero-banner p{
+font-size:18px;
+opacity:.9;
+margin-bottom:25px;
+}
+
+.hero-btn{
+background:#fff;
+color:#93296f;
+padding:10px 25px;
+border-radius:30px;
+font-weight:600;
+text-decoration:none;
+}
+
+.hero-btn:hover{
+background:#f2e6f6;
+}
+
+.hero-img{
+max-height:350px;
+}
+
+
+
+
+.stats-section{
+padding:80px 0;
+background:#faf7ff;
+}
+
+.counter-box{
+background:#fff;
+padding:30px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.counter-box:hover{
+transform:translateY(-5px);
+}
+
+.counter{
+font-size:40px;
+color:#93296f;
+font-weight:700;
+}
+
+
+.directors{
+padding:80px 0;
+}
+
+.director-card{
+text-align:center;
+background:#fff;
+padding:25px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.director-card:hover{
+transform:translateY(-8px);
+}
+
+.director-card img{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:15px;
+}
