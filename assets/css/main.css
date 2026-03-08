@@ -213,12 +213,13 @@ h6 {
     opacity: 0;
     transition: 0.3s;
     border-radius: 4px;
-    z-index: 99;
+    z-index: 1000;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
   }
 
   .navmenu .dropdown ul li {
     min-width: 200px;
+    z-index: 1000;
   }
 
   .navmenu .dropdown ul a {
@@ -226,6 +227,7 @@ h6 {
     font-size: 15px;
     text-transform: none;
     color: var(--nav-dropdown-color);
+    z-index: 1000;
   }
 
   .navmenu .dropdown ul a i {

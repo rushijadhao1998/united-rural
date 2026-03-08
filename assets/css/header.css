@@ -1,3 +1,8 @@
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 #login_btn{
   padding: 8px 20px;
   border-radius: 30px;
@@ -94,7 +99,8 @@
   background-color: var(--background-color);
   padding: 10px 0;
   transition: all 0.5s;
-  z-index: 997;
+  /* z-index: 997; */
+  width: 100%;
 }
 
 .header .logo {
@@ -165,7 +171,7 @@
 
 
 .co-op {
-  font-size: 27px;
+  font-size: 28px;
   color: #000;
   font-weight: 600;
 }
@@ -180,7 +186,7 @@
   }
 
   .sitename {
-    font-size: 45px;
+    font-size: 40px;
   }
 
   .sitename_mar{
@@ -188,11 +194,11 @@
   }
 
   .sitename .ltr {
-    font-size: 60px;
+    font-size: 55px;
   }
 
   .co-op {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .co-op_mar{
@@ -265,7 +271,7 @@
   }
 
   .sitename {
-    font-size: 35px;
+    font-size: 34px;
   }
 
   .sitename_mar{
@@ -273,11 +279,11 @@
   }
 
   .sitename .ltr {
-    font-size: 50px;
+    font-size: 48px;
   }
 
   .co-op {
-    font-size: 18px;
+    font-size: 17.5px;
   }
 
   .co-op_mar{
@@ -304,7 +310,7 @@
   }
 
   .co-op {
-    font-size: 15px;
+    font-size: 15.5px;
   }
 
   .co-op_mar{
@@ -449,6 +455,7 @@
 .navmenu .dropdown ul{
   border-radius:8px;
   box-shadow:0 10px 20px rgba(0,0,0,0.15);
+  z-index: 1000;
 }
 
 /* mobile fix */
@@ -583,3 +590,5 @@
   position:relative;
   z-index:2;
 }
+
+
