@@ -66,7 +66,7 @@
 
         <div class="container">
 
-            <h2 class="about-title text-center">About Our Society</h2>
+            <h2 class="about-title text-center">About Us</h2>
 
             <div class="row align-items-center g-4">
 
@@ -84,11 +84,11 @@
 
                     <p class="about-text">
 
-                        United Rural Credit Co-Operative Society Ltd. Patansawangi is a trusted
-                        financial institution dedicated to the development of rural communities.
-
-                        We provide secure savings schemes, loan facilities and reliable financial
-                        services that help our members achieve financial growth and stability.
+                        United Rural Credit Co-Operative Society Ltd., Established on 11 May 2004, is a Registered Co-Operative Financial Institution located 
+                        At Patansaongi, Tah. Saoner, Dist. Nagpur, Maharashtra. The Society was Founded by Late Mr. Ravindra Jadhao, whose vision was to create 
+                        a reliable financial platform to support the economic development of rural and semi-urban communities. 
+                        The society is registered and operates under the provisions of the Maharashtra Co-Operative Societies Act, 1960, 
+                        which Governs the Formation, Regulation, and Management of Co-Operative Societies in the state of Maharashtra.
 
                     </p>
 
@@ -119,7 +119,7 @@
                                 <i class="bi bi-geo-alt"></i>
                                 <div>
                                     <h4>Location</h4>
-                                    <p>Patansawangi, Nagpur</p>
+                                    <p>Patansaoangi, Nagpur</p>
                                 </div>
                             </div>
                         </div>

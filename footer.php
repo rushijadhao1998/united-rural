@@ -43,9 +43,7 @@
 
           <li><a href="interest.php">Interest Rates</a></li>
 
-          <li><a href="service-loan.php">Loan Services</a></li>
-
-          <li><a href="contact.php">Contact</a></li>
+          <li><a href="contact.php">Contact Us</a></li>
 
           <li><a href="https://banking.elioratechno.in/admin/index">Login</a></li>
 
