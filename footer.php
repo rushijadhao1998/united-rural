@@ -181,6 +181,24 @@ updateCounter();
 </script>
 
 
+<script>
+function toggleServices() {
+
+  const menu = document.querySelector('.service-menu');
+  const list = document.getElementById('servicesList');
+
+  menu.classList.toggle('open');
+
+  if(list.style.display === "block"){
+      list.style.display = "none";
+  }else{
+      list.style.display = "block";
+  }
+
+}
+</script>
+
+
 </body>
 
 </html>

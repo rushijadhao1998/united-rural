@@ -1,33 +1,56 @@
+/*--------------------------------------------------------------
+# Service Details - Modern UI
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Service Box
+--------------------------------------------------------------*/
+
 .service-details .service-box {
-  background-color: var(--surface-color);
-  padding: 20px;
-  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
 }
 
-.service-details .service-box+.service-box {
-  margin-top: 30px;
+.service-details .service-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.service-details .service-box + .service-box {
+  margin-top: 25px;
 }
 
 .service-details .service-box h4 {
   font-size: 20px;
   font-weight: 700;
-  border-bottom: 2px solid color-mix(in srgb, var(--default-color), transparent 92%);
-  padding-bottom: 15px;
-  margin-bottom: 15px;
+  padding-bottom: 12px;
+  margin-bottom: 18px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
 }
 
+
+/*--------------------------------------------------------------
+# Services List
+--------------------------------------------------------------*/
+
 .service-details .services-list {
-  background-color: var(--surface-color);
+  display: flex;
+  flex-direction: column;
 }
 
 .service-details .services-list a {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  background-color: color-mix(in srgb, var(--default-color), transparent 96%);
   display: flex;
   align-items: center;
-  padding: 12px 15px;
-  margin-top: 15px;
-  transition: 0.3s;
+  padding: 14px 16px;
+  margin-top: 12px;
+  border-radius: 8px;
+  background: #f8f9fa;
+  color: #444;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 .service-details .services-list a:first-child {
@@ -35,96 +58,338 @@
 }
 
 .service-details .services-list a i {
-  font-size: 16px;
-  margin-right: 8px;
+  font-size: 18px;
+  margin-right: 10px;
   color: var(--accent-color);
+  transition: 0.3s;
 }
 
+/* Hover */
+
+.service-details .services-list a:hover {
+  background: var(--accent-color);
+  color: #fff;
+  transform: translateX(5px);
+}
+
+.service-details .services-list a:hover i {
+  color: #fff;
+}
+
+/* Active */
+
 .service-details .services-list a.active {
-  color: var(--contrast-color);
-  background-color: var(--accent-color);
+  background: linear-gradient(135deg, #93296f, #c94fa1);
+  color: #fff;
 }
 
 .service-details .services-list a.active i {
-  color: var(--contrast-color);
+  color: #fff;
 }
 
-.service-details .services-list a:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
-  color: var(--accent-color);
-}
 
-.service-details .download-catalog a {
-  color: var(--default-color);
+/*--------------------------------------------------------------
+# Service Toggle Menu (Mobile)
+--------------------------------------------------------------*/
+
+.service-menu-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  cursor: pointer;
+}
+
+.service-toggle-icon {
+  font-size: 20px;
   transition: 0.3s;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
-.service-details .download-catalog a:first-child {
-  border-top: 0;
-  padding-top: 0;
+.service-menu.open .service-toggle-icon {
+  transform: rotate(180deg);
 }
 
-.service-details .download-catalog a:last-child {
-  padding-bottom: 0;
-}
 
-.service-details .download-catalog a i {
-  font-size: 24px;
-  margin-right: 8px;
-  color: var(--accent-color);
-}
-
-.service-details .download-catalog a:hover {
-  color: var(--accent-color);
-}
+/*--------------------------------------------------------------
+# Help Box
+--------------------------------------------------------------*/
 
 .service-details .help-box {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
+  background: linear-gradient(135deg, #93296f, #c94fa1);
+  color: #fff;
   margin-top: 30px;
-  padding: 30px 15px;
+  padding: 35px 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .service-details .help-box .help-icon {
   font-size: 48px;
+  margin-bottom: 10px;
+  animation: float 3s ease-in-out infinite;
 }
 
 .service-details .help-box h4,
 .service-details .help-box a {
-  color: var(--contrast-color);
+  color: #fff;
 }
+
+.service-details .help-box a:hover {
+  text-decoration: underline;
+}
+
+
+/* Floating Animation */
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+
+/*--------------------------------------------------------------
+# Service Image
+--------------------------------------------------------------*/
 
 .service-details .services-img {
-  margin-bottom: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
+
+/*--------------------------------------------------------------
+# Content Typography
+--------------------------------------------------------------*/
+
 .service-details h3 {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .service-details p {
-  font-size: 15px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
 }
+
+
+/*--------------------------------------------------------------
+# List Styling (Deposit / Loan / etc.)
+--------------------------------------------------------------*/
 
 .service-details ul {
   list-style: none;
   padding: 0;
-  font-size: 15px;
+  margin-top: 20px;
+  font-size: 16px;
 }
 
 .service-details ul li {
-  padding: 5px 0;
   display: flex;
   align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.service-details ul li:hover {
+  background: rgba(201, 79, 161, 0.08);
 }
 
 .service-details ul i {
   font-size: 20px;
-  margin-right: 8px;
+  margin-right: 10px;
   color: var(--accent-color);
+}
+
+
+/*--------------------------------------------------------------
+# EMI Calculator
+--------------------------------------------------------------*/
+
+.emi-card {
+  background: #fff;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.emi-title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.emi-title i {
+  color: var(--accent-color);
+  margin-right: 6px;
+}
+
+.emi-note {
+  text-align: center;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+
+/* EMI Input / Result Boxes */
+
+.emi-box {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.input-group,
+.result-group {
+  margin-bottom: 18px;
+}
+
+.input-group label,
+.result-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.input-group label i,
+.result-group label i {
+  color: var(--accent-color);
+  margin-right: 5px;
+}
+
+.emi-box input {
+  width: 100%;
+  height: 42px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+  transition: 0.3s;
+}
+
+.emi-box input:focus {
+  border-color: var(--accent-color);
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* EMI Button */
+
+.btn-calc {
+  width: 100%;
+  height: 44px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #93296f, #c94fa1);
+  color: #fff;
+  transition: 0.3s;
+}
+
+.btn-calc:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.emi-result {
+  background: #fff;
+  border: 2px dashed rgba(201, 79, 161, 0.2);
+}
+
+#p_amt {
+  display: none;
+}
+
+
+/*--------------------------------------------------------------
+# Mobile Help Box
+--------------------------------------------------------------*/
+
+.mobile-help {
+  display: none;
+  margin-top: 40px;
+}
+
+.desktop-help {
+  display: block;
+}
+
+
+/*--------------------------------------------------------------
+# Responsive
+--------------------------------------------------------------*/
+
+@media (max-width: 991px) {
+
+  .service-details .services-img {
+    margin-top: 20px;
+  }
+
+  .service-details h3 {
+    font-size: 24px;
+  }
+
+  .service-details .services-list {
+    display: none;
+    margin-top: 15px;
+  }
+
+  .service-menu.open .services-list {
+    display: block;
+  }
+
+  .desktop-help {
+    display: none;
+  }
+
+  .mobile-help {
+    display: block;
+  }
+
+  .service-details .services-list a {
+    font-size: 15px;
+    padding: 12px 14px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .service-details .service-box {
+    padding: 20px;
+  }
+
+  .service-details ul li {
+    font-size: 15px;
+  }
+
+  .emi-card {
+    padding: 25px;
+  }
+
+  .emi-title {
+    font-size: 22px;
+  }
+}
+
+
+@media (max-width: 576px) {
+
+  .service-details h3 {
+    font-size: 22px;
+  }
+
+  .service-details p {
+    font-size: 15px;
+  }
+
 }
