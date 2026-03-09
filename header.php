@@ -27,7 +27,6 @@ $currentPage = basename($_SERVER['PHP_SELF']);
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/header.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/new.css">
   <link href="assets/css/about.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/servicedetails.css">
   <link href="assets/css/contact.css" rel="stylesheet">
@@ -161,6 +160,3 @@ $currentPage = basename($_SERVER['PHP_SELF']);
     </div>
 
   </header>
-
-
-  

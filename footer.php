@@ -336,7 +336,21 @@
 
 
 
+<div class="floating-contact">
 
+<a href="tel:+918446750779" class="contact-btn call">
+<i class="bi bi-telephone-fill"></i>
+</a>
+
+<a href="https://wa.me/918446750779" target="_blank" class="contact-btn whatsapp">
+<i class="bi bi-whatsapp"></i>
+</a>
+
+<a href="mailto:info@unitedrural.in" class="contact-btn email">
+<i class="bi bi-envelope-fill"></i>
+</a>
+
+</div>
 
 </body>
 

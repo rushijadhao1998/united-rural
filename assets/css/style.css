@@ -528,3 +528,144 @@
 
 }
 
+
+
+
+
+
+
+/* =========================
+   WHATSAPP FLOAT BUTTON
+========================= */
+
+.whatsapp-chat{
+position:fixed;
+bottom:25px;
+right:25px;
+z-index:999;
+}
+
+.whatsapp-chat a{
+display:flex;
+align-items:center;
+justify-content:center;
+
+width:60px;
+height:60px;
+
+background:#25D366;
+color:#fff;
+
+border-radius:50%;
+font-size:32px;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.25);
+
+transition:.3s;
+animation:whatsappPulse 2s infinite;
+}
+
+.whatsapp-chat a:hover{
+transform:scale(1.1);
+background:#1ebe5d;
+}
+
+@keyframes whatsappPulse{
+
+0%{
+box-shadow:0 0 0 0 rgba(37,211,102,0.6);
+}
+
+70%{
+box-shadow:0 0 0 18px rgba(37,211,102,0);
+}
+
+100%{
+box-shadow:0 0 0 0 rgba(37,211,102,0);
+}
+
+}
+
+
+
+/* =========================
+FLOATING CONTACT WIDGET
+========================= */
+
+.floating-contact{
+position:fixed;
+right:20px;
+bottom:25px;
+display:flex;
+flex-direction:column;
+gap:12px;
+z-index:999;
+}
+
+/* buttons */
+
+.contact-btn{
+
+width:55px;
+height:55px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+color:#fff;
+font-size:22px;
+
+border-radius:50%;
+text-decoration:none;
+
+box-shadow:0 6px 20px rgba(0,0,0,0.25);
+
+transition:.3s;
+
+}
+
+/* Call */
+
+.contact-btn.call{
+background:#4f46e5;
+}
+
+/* WhatsApp */
+
+.contact-btn.whatsapp{
+background:#25D366;
+}
+
+/* Email */
+
+.contact-btn.email{
+background:#ff6b6b;
+}
+
+/* hover */
+
+.contact-btn:hover{
+transform:scale(1.12);
+}
+
+/* pulse animation */
+
+.contact-btn.whatsapp{
+animation:whatsappPulse 2s infinite;
+}
+
+@keyframes whatsappPulse{
+
+0%{
+box-shadow:0 0 0 0 rgba(37,211,102,0.7);
+}
+
+70%{
+box-shadow:0 0 0 15px rgba(37,211,102,0);
+}
+
+100%{
+box-shadow:0 0 0 0 rgba(37,211,102,0);
+}
+}

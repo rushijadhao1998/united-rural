@@ -757,6 +757,9 @@ border-radius:50%;
    PARTNER LOGO SLIDER
 ===================================================== */
 
+
+
+
 .partner{
 	padding-bottom: 40px;
 }
@@ -791,10 +794,12 @@ border-radius:50%;
 }
 
 .partner-item img {
-	width: 200px;
-	height: 80px;
-	object-fit: contain;
+	display: block;
+	margin: 0 auto;
+	max-width: 220px
 }
+
+
 
 @keyframes scroll {
 	from {
