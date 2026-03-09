@@ -1,25 +1,35 @@
 <?php
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$phone = $_POST['phone'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+$name = htmlspecialchars($_POST['name']);
+$phone = htmlspecialchars($_POST['phone']);
+$email = htmlspecialchars($_POST['email']);
+$message = htmlspecialchars($_POST['message']);
 
 $to = "info@unitedrural.in";
 
+$subject = "New Contact Message";
+
 $body = "
 Name: $name
-Email: $email
 Phone: $phone
-Subject: $subject
+Email: $email
 
 Message:
 $message
 ";
 
-mail($to,$subject,$body);
+$headers = "From: United Rural Website <info@unitedrural.in>\r\n";
+$headers .= "Reply-To: $email\r\n";
+$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
-header("Location: contact.php?success=1");
+if(mail($to,$subject,$body,$headers)){
+echo "<span style='color:green;font-weight:600;'>Message sent successfully!</span>";
+}else{
+echo "<span style='color:red;font-weight:600;'>Server error. Please try again.</span>";
+}
+
+}
 
 ?>

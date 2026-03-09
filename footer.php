@@ -338,19 +338,41 @@
 
 <div class="floating-contact">
 
-<a href="tel:+918446750779" class="contact-btn call">
-<i class="bi bi-telephone-fill"></i>
-</a>
+  <a href="tel:+918446750779" class="contact-btn call">
+    <i class="bi bi-telephone-fill"></i>
+  </a>
 
-<a href="https://wa.me/918446750779" target="_blank" class="contact-btn whatsapp">
-<i class="bi bi-whatsapp"></i>
-</a>
+  <a href="https://wa.me/918446750779" target="_blank" class="contact-btn whatsapp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
 
-<a href="mailto:info@unitedrural.in" class="contact-btn email">
-<i class="bi bi-envelope-fill"></i>
-</a>
+  <a href="mailto:info@unitedrural.in" class="contact-btn email">
+    <i class="bi bi-envelope-fill"></i>
+  </a>
 
 </div>
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BankOrCreditUnion",
+    "name": "United Rural Credit Co-Op Society Ltd",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "At Post Patansaongi",
+      "addressLocality": "Saoner",
+      "addressRegion": "Maharashtra",
+      "postalCode": "441113",
+      "addressCountry": "India"
+    },
+    "telephone": "+918446750779",
+    "url": "https://unitedrural.in"
+  }
+</script>
+
+
 
 </body>
 

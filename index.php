@@ -1,4 +1,8 @@
-<?php include 'header.php'; ?>
+<?php 
+$page_title = "United Rural Credit Co-Op Society Ltd | Patansaongi Nagpur";
+$page_description = "United Rural Credit Co-Op Society Ltd Patansaongi Nagpur provides cooperative banking services, deposits and loans.";
+include 'header.php'; 
+?>
 
 <main class="main">
 

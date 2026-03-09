@@ -8,10 +8,18 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <meta property="og:title" content="Contact United Rural Credit Society">
+  <meta property="og:description" content="Contact United Rural Credit Co-Op Society Ltd Patansaongi Nagpur">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://unitedrural.in/contact">
+  <meta name="keywords" content="United Rural Credit Society, Patansaongi Bank, Nagpur Cooperative Bank, Rural Credit Society Nagpur">
+  <meta name="author" content="United Rural Credit Co-Op Society Ltd">
+  <meta name="keywords" content="United, Best Co-Op, Society in Nagpur, Best Co-Op. Society in Saoner, Best Co-Op. Society in Patansaongi ">
   <link rel="shortcut icon" type="x-icon" href="assets/img/logo.png">
+  <meta name="description" content="<?php echo $page_description; ?>">
 
-  <title>United Rural</title>
+  <title><?php echo $page_title; ?></title>
+
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Poppins&family=Raleway&display=swap" rel="stylesheet">

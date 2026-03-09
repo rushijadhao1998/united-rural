@@ -1,4 +1,10 @@
-<?php include 'header.php'; ?>
+<?php 
+$page_title = "Contact | United Rural Credit Co-Op Society Ltd Patansaongi Nagpur";
+$page_description = "Contact United Rural Credit Society Patansaongi Nagpur for cooperative banking services, loans and deposits.";
+include 'header.php'; 
+?>
+
+
 
 <main class="main">
 
@@ -158,6 +164,8 @@
 ========================== -->
 
   <section class="map-section">
+
+  <h2 class="text-center">Find Our Branch Location</h2>
 
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6250.771694291925!2d79.02602269977697!3d21.32163958908985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4dd5f043c09e7%3A0x3c597f36181659ee!2sUnited%20Rural%20Credit%20Co-Op.%20Society%20Ltd.!5e0!3m2!1sen!2sin!4v1773070073681!5m2!1sen!2sin"
