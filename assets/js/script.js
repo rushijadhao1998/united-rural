@@ -35,6 +35,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
 
                 let phone = document.querySelector('[name="phone"]').value;
+                let name = document.querySelector('[name="name"]').value;
+
+                fetch("send-sms.php", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    body: "phone=" + phone + "&name=" + name
+                });
 
                 fetch("send-sms.php", {
                     method: "POST",
