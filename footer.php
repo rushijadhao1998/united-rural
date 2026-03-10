@@ -374,6 +374,12 @@
 
 
 
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+
 </body>
 
 </html>

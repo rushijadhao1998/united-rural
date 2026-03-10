@@ -1,35 +1,50 @@
 <?php
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+require 'PHPMailer/src/Exception.php';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-$name = htmlspecialchars($_POST['name']);
-$phone = htmlspecialchars($_POST['phone']);
-$email = htmlspecialchars($_POST['email']);
-$message = htmlspecialchars($_POST['message']);
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
 
-$to = "info@unitedrural.in";
+    $mail = new PHPMailer(true);
 
-$subject = "New Contact Message";
+    try {
 
-$body = "
-Name: $name
-Phone: $phone
-Email: $email
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'yourgmail@gmail.com';
+        $mail->Password = 'yourapppassword';
+        $mail->SMTPSecure = 'tls';
+        $mail->Port = 587;
 
-Message:
-$message
+        $mail->setFrom('yourgmail@gmail.com', 'Website Contact');
+
+        $mail->addAddress('info@unitedrural.in');
+
+        $mail->isHTML(true);
+        $mail->Subject = 'New Contact Message';
+
+        $mail->Body = "
+Name: $name <br>
+Phone: $phone <br>
+Email: $email <br>
+Message: $message
 ";
 
-$headers = "From: United Rural Website <info@unitedrural.in>\r\n";
-$headers .= "Reply-To: $email\r\n";
-$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+        $mail->send();
 
-if(mail($to,$subject,$body,$headers)){
-echo "<span style='color:green;font-weight:600;'>Message sent successfully!</span>";
-}else{
-echo "<span style='color:red;font-weight:600;'>Server error. Please try again.</span>";
+        echo "<script>alert('Message Sent Successfully');window.location.href='contact.php';</script>";
+    } catch (Exception $e) {
+
+        echo "<script>alert('Message Failed');window.location.href='contact.php';</script>";
+    }
 }
-
-}
-
-?>

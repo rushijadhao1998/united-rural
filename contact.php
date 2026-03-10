@@ -1,7 +1,7 @@
-<?php 
+<?php
 $page_title = "Contact | United Rural Credit Co-Op Society Ltd Patansaongi Nagpur";
 $page_description = "Contact United Rural Credit Society Patansaongi Nagpur for cooperative banking services, loans and deposits.";
-include 'header.php'; 
+include 'header.php';
 ?>
 
 
@@ -74,79 +74,82 @@ include 'header.php';
   <!-- =========================
    CONTACT SECTION
 ========================== -->
-<section id="contact" class="contact section">
+  <section id="contact" class="contact section">
 
-  <div class="container">
+    <div class="container">
 
-    <div class="row g-4 align-items-stretch">
+      <div class="row g-4 align-items-stretch">
 
-      <!-- Contact Info -->
-      <div class=" col-lg-4 contact-info">
+        <!-- Contact Info -->
+        <div class=" col-lg-4 contact-info">
 
-        <div class="info-item">
-          <i class="bi bi-geo-alt-fill"></i>
-          <p>
-            <a href="https://maps.app.goo.gl/GuptqS9fsrjB28137" target="_blank">
-              At Post Patansaongi,<br>
-              Tah. Saoner, Dist. Nagpur,<br>
-               Maharashtra, <br>
-              India - 441113
-            </a>
-          </p>
+          <div class="info-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <p>
+              <a href="https://maps.app.goo.gl/GuptqS9fsrjB28137" target="_blank">
+                At Post Patansaongi,<br>
+                Tah. Saoner, Dist. Nagpur,<br>
+                Maharashtra, <br>
+                India - 441113
+              </a>
+            </p>
+          </div>
+
+          <div class="info-item">
+            <i class="bi bi-envelope-fill"></i>
+            <p>
+              <a href="mailto:info@unitedrural.in">info@unitedrural.in</a>
+            </p>
+          </div>
+
+          <div class="info-item">
+            <i class="bi bi-telephone-fill"></i>
+            <p>
+              <a href="tel:+918446750779">+91 84467 50779</a>
+            </p>
+          </div>
+
         </div>
 
-        <div class="info-item">
-          <i class="bi bi-envelope-fill"></i>
-          <p>
-            <a href="mailto:info@unitedrural.in">info@unitedrural.in</a>
-          </p>
-        </div>
+        <!-- Contact Form -->
+        <div class="col-lg-8">
 
-        <div class="info-item">
-          <i class="bi bi-telephone-fill"></i>
-          <p>
-            <a href="tel:+918446750779">+91 84467 50779</a>
-          </p>
-        </div>
+          <div class="contact-form">
 
-      </div>
+            <h3>Send us a Message</h3>
 
-      <!-- Contact Form -->
-      <div class="col-lg-8">
 
-        <div class="contact-form">
+            <form id="contact-form">
 
-          <h3>Send us a Message</h3>
+              <div class="row g-3">
 
-          <form action="contact-mail.php" method="post">
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
 
-            <div class="row g-3">
+                <div class="col-md-6">
+                  <input type="tel" name="phone" class="form-control" placeholder="Mobile Number" required>
+                </div>
 
-              <div class="col-md-6">
-                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                <div class="col-12">
+                  <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                </div>
+
+                <div class="col-12">
+                  <textarea name="message" rows="5" class="form-control" placeholder="Write your message..." required></textarea>
+                </div>
+
               </div>
 
-              <div class="col-md-6">
-                <input type="tel" name="phone" class="form-control" placeholder="Mobile Number" required>
+              <div class="text-center mt-4">
+                <button type="submit" class="btn-contact" id="submit-btn">
+                  Send Message
+                </button>
               </div>
 
-              <div class="col-12">
-                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-              </div>
+            </form>
 
-              <div class="col-12">
-                <textarea name="message" rows="5" class="form-control" placeholder="Write your message..." required></textarea>
-              </div>
-
-            </div>
-
-            <div class="text-center mt-4">
-              <button type="submit" class="btn-contact">
-                Send Message
-              </button>
-            </div>
-
-          </form>
+          </div>
 
         </div>
 
@@ -154,9 +157,7 @@ include 'header.php';
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
   <!-- =========================
@@ -165,7 +166,7 @@ include 'header.php';
 
   <section class="map-section">
 
-  <h2 class="text-center">Find Our Branch Location</h2>
+    <h2 class="about-title text-center">Find Our Branch Location</h2>
 
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6250.771694291925!2d79.02602269977697!3d21.32163958908985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4dd5f043c09e7%3A0x3c597f36181659ee!2sUnited%20Rural%20Credit%20Co-Op.%20Society%20Ltd.!5e0!3m2!1sen!2sin!4v1773070073681!5m2!1sen!2sin"
