@@ -2,10 +2,11 @@
 
 $fields = [
 "sender_id"=>"URCCSL",
-"message"=>"Test message from website",
+"message"=>"Wish You Happy Birthday -UNITED RURAL SOCIETY",
 "language"=>"english",
 "route"=>"p",
-"numbers"=>"918446590779"
+"numbers"=>"918446590779",
+"DLT_TE_ID" => "1707171809764339483"
 ];
 
 $curl = curl_init();
