@@ -1,10 +1,12 @@
+<!-- this is a successfull code for send sms WITHOUT VARIABLE -->
+
 <?php
 
 $fields = [
 "sender_id"=>"URCCSL",
-"message"=>"Wish You Happy Birthday -UNITED RURAL SOCIETY",
+"message"=>"210872",
 "language"=>"english",
-"route"=>"p",
+"route"=>"dlt",
 "numbers"=>"918446590779",
 "DLT_TE_ID" => "1707171809764339483"
 ];
@@ -26,3 +28,4 @@ $response = curl_exec($curl);
 curl_close($curl);
 
 echo $response;
+
