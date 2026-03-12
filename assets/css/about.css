@@ -175,14 +175,14 @@
 	animation-duration: 20s;
 }
 
-@keyframes waveMove {
-	0% {
-		transform: translate3d(-90px, 0, 0);
-	}
+@keyframes abt-waveMove {
+  0% {
+    transform: translate3d(-200px, 0, 0)
+  }
 
-	100% {
-		transform: translate3d(30px, 0, 0);
-	}
+  100% {
+    transform: translate3d(-20px, 0, 0)
+  }
 }
 
 
@@ -403,7 +403,7 @@
    MOVING WAVE
 ============================= */
 
-.wave {
+.abt-wave {
 	position: absolute;
 	bottom: -40px;
 	left: 0;
@@ -411,26 +411,26 @@
 	height: 120px;
 	background: rgba(0, 0, 0, 0.04);
 	border-radius: 40%;
-	animation: waveMove 6s infinite linear;
+	animation: abt-waveMove 6s infinite linear;
 }
 
-.stat1 .wave {
+.stat1 .abt-wave {
 	background: rgba(255, 122, 24, 0.15);
 }
 
-.stat2 .wave {
+.stat2 .abt-wave {
 	background: rgba(255, 61, 129, 0.15);
 }
 
-.stat3 .wave {
+.stat3 .abt-wave {
 	background: rgba(54, 209, 220, 0.15);
 }
 
-.stat4 .wave {
+.stat4 .abt-wave {
 	background: rgba(0, 200, 83, 0.15);
 }
 
-@keyframes waveMove {
+@keyframes abt-waveMove {
 	0% {
 		transform: translateX(0);
 	}

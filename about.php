@@ -159,7 +159,7 @@ include 'header.php';
                 <div class="col-lg-3 col-md-6">
                     <div class="stat-card stat1">
 
-                        <div class="wave"></div>
+                        <div class="abt-wave"></div>
 
                         <div class="stat-icon">
                             <i class="bi bi-calendar-check"></i>
@@ -174,7 +174,7 @@ include 'header.php';
                 <div class="col-lg-3 col-md-6">
                     <div class="stat-card stat2">
 
-                        <div class="wave"></div>
+                        <div class="abt-wave"></div>
 
                         <div class="stat-icon">
                             <i class="bi bi-people"></i>
@@ -189,7 +189,7 @@ include 'header.php';
                 <div class="col-lg-3 col-md-6">
                     <div class="stat-card stat3">
 
-                        <div class="wave"></div>
+                        <div class="abt-wave"></div>
 
                         <div class="stat-icon">
                             <i class="bi bi-cash-stack"></i>
@@ -204,7 +204,7 @@ include 'header.php';
                 <div class="col-lg-3 col-md-6">
                     <div class="stat-card stat4">
 
-                        <div class="wave"></div>
+                        <div class="abt-wave"></div>
 
                         <div class="stat-icon">
                             <i class="bi bi-bank"></i>
