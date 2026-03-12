@@ -10,24 +10,22 @@ $phone = preg_replace('/[^0-9]/', '', $_POST['phone']);
 $name  = htmlspecialchars($_POST['name']);
 
 // Add India country code if missing
-if(strlen($phone) == 10){
+if (strlen($phone) == 10) {
     $phone = "91" . $phone;
 }
 
 // Fast2SMS API Key
 $apiKey = "cW0zxjVzKDt8LbKrdsn0aGXJZwUwRmooAh2mdJv8sfsDvf3U8Vz97bpn4zlH";
 
-// SMS Message
-$message = "Hello $name, Thank you for contacting United Rural Credit Co-Op Society Ltd. Our team will contact you soon.";
 
 // API Fields
 $fields = array(
     "sender_id" => "URCCSL",
-    "message" => $message,
+    "message" => "211098",
+    "variables_values" => $name,
     "language" => "english",
-    "route" => "p",
-    "numbers" => $phone,
-    "flash" => "0",
+    "route" => "dlt",
+    "numbers" => "918446590779",
     "DLT_TE_ID" => "1707177315122905180"
 );
 
@@ -53,5 +51,3 @@ curl_close($curl);
 
 // Return response
 echo $response;
-
-?>
