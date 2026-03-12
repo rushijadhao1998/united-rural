@@ -141,9 +141,9 @@
 </footer>
 
 
-<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+<!-- <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
   <i class="bi bi-arrow-up-short"></i>
-</a>
+</a> -->
 
 <div id="preloader"></div>
 
@@ -338,17 +338,17 @@
 
 <div class="floating-contact">
 
-  <a href="tel:+918446750779" class="contact-btn call">
+  <!-- <a href="tel:+918446750779" class="contact-btn call">
     <i class="bi bi-telephone-fill"></i>
-  </a>
+  </a> -->
 
   <a href="https://wa.me/918446750779" target="_blank" class="contact-btn whatsapp">
     <i class="bi bi-whatsapp"></i>
   </a>
 
-  <a href="mailto:info@unitedrural.in" class="contact-btn email">
+  <!-- <a href="mailto:info@unitedrural.in" class="contact-btn email">
     <i class="bi bi-envelope-fill"></i>
-  </a>
+  </a> -->
 
 </div>
 
