@@ -414,7 +414,7 @@
 ====================================================== */
 
 .footer-bottom {
-  margin-top: 40px;
+  /* margin-top: 40px; */
   padding: 16px 0;
 
   text-align: center;
@@ -422,12 +422,18 @@
 
   background: #0c0c12;
   border-top: 1px solid rgba(255,255,255,0.08);
+  z-index: 1003;
+}
+
+.footer-bottom p{
+  color: #fff;
 }
 
 .footer-bottom a {
   color: #c94fa1;
   font-weight: 600;
   text-decoration: none;
+  cursor: pointer;
 }
 
 
@@ -606,8 +612,8 @@ z-index:999;
 
 .contact-btn{
 
-width:55px;
-height:55px;
+width:44px;
+height:44px;
 
 display:flex;
 align-items:center;

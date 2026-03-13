@@ -5,7 +5,7 @@
 
   <div class="container footer-wrapper">
 
-    <div class="row gy-4">
+    <div class="row gy-4" style="padding-bottom: 40px;">
 
       <!-- About -->
       <div class="col-xl-3 col-lg-4 col-md-6 col-12 footer-col">
@@ -124,82 +124,67 @@
 
   <!-- bottom bar -->
 
-  <div class="footer-bottom">
+</footer>
 
-    <div class="container">
+<div class="footer-bottom">
 
-      <p>
-        © <?php echo date("Y"); ?> <strong class="sitename-footer">United Rural</strong>
-        | Designed & Developed by
-        <a style="cursor: pointer;" href="https://unitedtech.in">United Technologies Pvt Ltd</a>
-      </p>
+  <div class="container">
 
-    </div>
+    <p>
+      © <?php echo date("Y"); ?> <strong class="sitename-footer">United Rural</strong>
+      | Designed & Developed by
+    </p>
+      <a style="cursor: pointer;" href="https://unitedtech.in">United Technologies Pvt Ltd</a>
 
   </div>
 
-</footer>
+</div>
 
-
-<!-- <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+<!-- SCROLL  -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
   <i class="bi bi-arrow-up-short"></i>
-</a> -->
+</a>
 
+<!-- PRELOADR -->
 <div id="preloader"></div>
-
 
 <!-- Vendor JS -->
 
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 <script src="assets/vendor/php-email-form/validate.js"></script>
-
 <script src="assets/vendor/aos/aos.js"></script>
-
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 
-
 <!-- Main JS -->
-
 <script src="assets/js/main.js"></script>
 
-
 <!-- Swiper -->
-
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
 <script>
   const swiper = new Swiper('.swiper', {
-
     effect: "fade",
-
     fadeEffect: {
       crossFade: true
     },
-
     autoplay: {
       delay: 3000,
       disableOnInteraction: false
     },
-
     speed: 2000,
     loop: true,
-
     pagination: {
       el: '.swiper-pagination',
       clickable: true
     },
-
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     },
-
     scrollbar: {
       el: '.swiper-scrollbar'
     }
-
   });
 </script>
 

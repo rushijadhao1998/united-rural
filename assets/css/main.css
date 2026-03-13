@@ -390,12 +390,14 @@ h6 {
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
+
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);
   font-size: 14px;
   padding: 40px 0;
   position: relative;
+  
 }
 
 .footer .copyright p {
@@ -481,21 +483,24 @@ h6 {
   height: 44px;
   border-radius: 50px;
   transition: all 0.4s;
+  display: none;
 }
 
 .scroll-top i {
   font-size: 24px;
   color: var(--contrast-color);
   line-height: 0;
+  display: none;
 }
 
 .scroll-top:hover {
   background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
   color: var(--contrast-color);
+  display: none;
 }
 
 .scroll-top.active {
-  visibility: visible;
+  visibility: hidden;
   opacity: 1;
   bottom: 15px;
 }
